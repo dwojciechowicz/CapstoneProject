@@ -8,4 +8,5 @@
     <string name="back">Back</string>
     <string name="transaction_history2">transaction_history2</string>
     <string name="your_transaction_history">Your Transaction History</string>
+    <string name="current_balance">CURRENT BALANCE</string>
 </resources>
