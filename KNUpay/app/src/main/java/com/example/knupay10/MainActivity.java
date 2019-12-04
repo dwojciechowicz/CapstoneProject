@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //Do any action here. Now we are moving to next page
-                Intent homeIntent = new Intent(MainActivity.this, StartActivity.class);
+                Intent homeIntent = new Intent(MainActivity.this, Loginin.class);
                 startActivity(homeIntent);
 
                 //This 'finish()' is for exiting the app when back button pressed from Home page which is ActivityHome

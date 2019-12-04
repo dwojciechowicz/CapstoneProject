@@ -911,6 +911,7 @@ layout abc_tooltip
 layout activity_history
 layout activity_loginin
 layout activity_main
+layout activity_signin
 layout activity_start
 layout custom_dialog
 layout notification_action
