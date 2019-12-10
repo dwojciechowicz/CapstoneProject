@@ -16,5 +16,5 @@
     <string name="telephone">Mobile number</string>
     <string name="email">Email address</string>
     <string name="create">Create new account</string>
-    <string name="new_member">Don't have an account?</string>
+    <string name="new_member">Do not have an account?</string>
 </resources>
