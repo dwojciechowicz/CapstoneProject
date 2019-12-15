@@ -1,4 +1,4 @@
-#Tue Dec 10 14:47:21 CST 2019
-base.0=C\:\\Users\\Zosia\\Desktop\\GitHub\\CapstoneProject\\KNUpay\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sun Dec 15 22:21:19 KST 2019
+base.0=C\:\\Users\\Dorota\\Desktop\\CapstoneProject\\KNUpay\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

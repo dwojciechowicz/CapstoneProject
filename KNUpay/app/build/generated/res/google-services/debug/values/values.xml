@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">818810289411-72i9gi3vhjeal9l10vhe9d2vqekftq6n.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://knupay-92fbd.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">818810289411</string>
+    <string name="google_api_key" translatable="false">AIzaSyDbd0w--YL944LsCUmT2WgXtB0UXOfUteo</string>
+    <string name="google_app_id" translatable="false">1:818810289411:android:f9649ed00e5784e1f87d36</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDbd0w--YL944LsCUmT2WgXtB0UXOfUteo</string>
+    <string name="google_storage_bucket" translatable="false">knupay-92fbd.appspot.com</string>
+    <string name="project_id" translatable="false">knupay-92fbd</string>
+</resources>

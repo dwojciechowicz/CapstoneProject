@@ -6,57 +6,182 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="18"
-8-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml
+8-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml
+9-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:5:5-24:19
-12        android:allowBackup="true"
-12-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\Zosia\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.knupay10.Signin" />
-21-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:12:9-53
-21-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:12:19-41
-22        <activity android:name="com.example.knupay10.Loginin" />
-22-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:13:9-45
-22-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:13:19-42
-23        <activity android:name="com.example.knupay10.Login" />
-23-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:14:9-43
-23-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:14:19-40
-24        <activity android:name="com.example.knupay10.HistoryActivity" />
-24-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:15:9-53
-24-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:15:19-50
-25        <activity android:name="com.example.knupay10.StartActivity" />
-25-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:16:9-51
-25-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:16:19-48
-26        <activity android:name="com.example.knupay10.MainActivity" >
-26-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:17:9-23:20
-26-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:17:19-47
-27            <intent-filter>
-27-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:18:13-22:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:19:17-69
-28-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:21:17-77
-30-->C:\Users\Zosia\Desktop\GitHub\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:21:27-74
-31            </intent-filter>
-32        </activity>
-33    </application>
-34
-35</manifest>
+11    <!-- Required permission for App measurement to run. -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:23:5-67
+12-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:23:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:24:5-79
+13-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:24:22-76
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:25:5-68
+14-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:25:22-65
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:26:22-107
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+16-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+17
+18    <application
+18-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:5:5-24:19
+19        android:allowBackup="true"
+19-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:6:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\56b6cdfbd80af409835a31a4470c49f0\core-1.1.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:7:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:8:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:9:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:10:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:11:9-40
+28        <activity android:name="com.example.knupay10.Signin" />
+28-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:12:9-53
+28-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:12:19-41
+29        <activity android:name="com.example.knupay10.Loginin" />
+29-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:13:9-45
+29-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:13:19-42
+30        <activity android:name="com.example.knupay10.Login" />
+30-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:14:9-43
+30-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:14:19-40
+31        <activity android:name="com.example.knupay10.HistoryActivity" />
+31-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:15:9-53
+31-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:15:19-50
+32        <activity android:name="com.example.knupay10.StartActivity" />
+32-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:16:9-51
+32-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:16:19-48
+33        <activity android:name="com.example.knupay10.MainActivity" >
+33-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:17:9-23:20
+33-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:17:19-47
+34            <intent-filter>
+34-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:18:13-22:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:19:17-69
+35-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:19:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:21:17-77
+37-->C:\Users\Dorota\Desktop\CapstoneProject\KNUpay\app\src\main\AndroidManifest.xml:21:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <receiver
+41-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:29:9-33:20
+42            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+42-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:30:13-85
+43            android:enabled="true"
+43-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:31:13-35
+44            android:exported="false" >
+44-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:32:13-37
+45        </receiver>
+46        <receiver
+46-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:34:9-42:20
+47            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+47-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:35:13-100
+48            android:enabled="true"
+48-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:36:13-35
+49            android:exported="true"
+49-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:37:13-36
+50            android:permission="android.permission.INSTALL_PACKAGES" >
+50-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:38:13-69
+51            <intent-filter>
+51-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:39:13-41:29
+52                <action android:name="com.android.vending.INSTALL_REFERRER" />
+52-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:40:17-79
+52-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:40:25-76
+53            </intent-filter>
+54        </receiver>
+55
+56        <service
+56-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:44:9-47:40
+57            android:name="com.google.android.gms.measurement.AppMeasurementService"
+57-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:45:13-84
+58            android:enabled="true"
+58-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:46:13-35
+59            android:exported="false" />
+59-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:47:13-37
+60        <service
+60-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:48:9-52:72
+61            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+61-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:49:13-87
+62            android:enabled="true"
+62-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:50:13-35
+63            android:exported="false"
+63-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:51:13-37
+64            android:permission="android.permission.BIND_JOB_SERVICE" />
+64-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\7c4237e0029812955685234cfce19139\play-services-measurement-17.2.0\AndroidManifest.xml:52:13-69
+65        <service
+65-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\28c1ceda9eb72d23d1907429a7dd5035\play-services-measurement-api-17.2.0\AndroidManifest.xml:27:9-33:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\28c1ceda9eb72d23d1907429a7dd5035\play-services-measurement-api-17.2.0\AndroidManifest.xml:28:13-84
+67            android:exported="false" >
+67-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\28c1ceda9eb72d23d1907429a7dd5035\play-services-measurement-api-17.2.0\AndroidManifest.xml:29:13-37
+68            <meta-data
+68-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\28c1ceda9eb72d23d1907429a7dd5035\play-services-measurement-api-17.2.0\AndroidManifest.xml:30:13-32:85
+69                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+69-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\28c1ceda9eb72d23d1907429a7dd5035\play-services-measurement-api-17.2.0\AndroidManifest.xml:31:17-139
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\28c1ceda9eb72d23d1907429a7dd5035\play-services-measurement-api-17.2.0\AndroidManifest.xml:32:17-82
+71            <meta-data
+71-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+72                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+72-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+74        </service>
+75
+76        <receiver
+76-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+77            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+77-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+78            android:exported="true"
+78-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+79            android:permission="com.google.android.c2dm.permission.SEND" >
+79-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+80            <intent-filter>
+80-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+81                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+81-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+81-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\6cfe46f408152b0cf1be5d6c31bb25ab\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+82            </intent-filter>
+83        </receiver>
+84
+85        <provider
+85-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\e306355be855e8d08fa629ba35e00000\firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+86            android:name="com.google.firebase.provider.FirebaseInitProvider"
+86-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\e306355be855e8d08fa629ba35e00000\firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+87            android:authorities="com.example.knupay10.firebaseinitprovider"
+87-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\e306355be855e8d08fa629ba35e00000\firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+88            android:exported="false"
+88-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\e306355be855e8d08fa629ba35e00000\firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+89            android:initOrder="100" />
+89-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\e306355be855e8d08fa629ba35e00000\firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+90
+91        <activity
+91-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\c423a4a4c865f1495e65a77f87be0907\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+92-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\c423a4a4c865f1495e65a77f87be0907\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+93            android:exported="false"
+93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\c423a4a4c865f1495e65a77f87be0907\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\c423a4a4c865f1495e65a77f87be0907\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+95
+96        <meta-data
+96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\c177b7c3092644bc25f0738b5c889226\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+97            android:name="com.google.android.gms.version"
+97-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\c177b7c3092644bc25f0738b5c889226\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+98            android:value="@integer/google_play_services_version" />
+98-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dorota\.gradle\caches\transforms-2\files-2.1\c177b7c3092644bc25f0738b5c889226\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+99    </application>
+100
+101</manifest>
