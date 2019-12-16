@@ -790,6 +790,7 @@ id button3
 id button4
 id button5
 id button6
+id button7
 id buttonPanel
 id center_vertical
 id chains
@@ -812,6 +813,7 @@ id editText
 id editText2
 id editText3
 id editText4
+id editText5
 id edit_query
 id end
 id expand_activities_button
@@ -1037,6 +1039,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string login
 string logo
+string logout
 string make_transfer
 string new_member
 string password

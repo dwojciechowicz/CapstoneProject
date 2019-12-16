@@ -1,17 +1,23 @@
 package com.example.knupay10;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Signin extends AppCompatActivity {
     private Button register;
     private Button button;
     private EditText username, password, emailID, phoneNR;
+    FirebaseAuth mfire;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,15 +27,16 @@ public class Signin extends AppCompatActivity {
         password = (EditText) findViewById(R.id.editText2);
         phoneNR = (EditText) findViewById(R.id.editText3);
         emailID = (EditText) findViewById(R.id.editText4);
+        mfire = FirebaseAuth.getInstance();
 
         register = (Button) findViewById(R.id.button6);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uname = username.getText().toString();
-                String pwd = password.getText().toString();
-                String phone = phoneNR.getText().toString();
-                String email = emailID.getText().toString();
+                String uname = username.getText().toString().trim();
+                final String pwd = password.getText().toString().trim();
+                String phone = phoneNR.getText().toString().trim();
+                final String email = emailID.getText().toString().trim();
                 if(uname.isEmpty())
                 {
                     username.setError("Please enter your username");
@@ -37,22 +44,32 @@ public class Signin extends AppCompatActivity {
                 }
                 else  if(pwd.isEmpty())
                 {
-                    username.setError("Please enter your password");
-                    username.requestFocus();
+                    password.setError("Please enter your password");
+                    password.requestFocus();
                 }
                 else  if(phone.isEmpty())
                 {
-                    username.setError("Please enter your phone number");
-                    username.requestFocus();
+                    phoneNR.setError("Please enter your phone number");
+                    phoneNR.requestFocus();
                 }
                 else  if(email.isEmpty())
                 {
-                    username.setError("Please enter your email");
-                    username.requestFocus();
+                    emailID.setError("Please enter your email");
+                    emailID.requestFocus();
                 }
                 else
                 {
-                    openActivity6();
+                    mfire.createUserWithEmailAndPassword(email,pwd).addOnCompleteListener(Signin.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(!task.isSuccessful())
+                            {
+                                Toast.makeText(Signin.this,"Signing up unsuccessful",Toast.LENGTH_SHORT).show();
+                            }
+                            else
+                           startActivity(new Intent(Signin.this, StartActivity.class));
+                        }
+                    });
                 }
             }
         });
@@ -65,10 +82,7 @@ public class Signin extends AppCompatActivity {
             }
         });
     }
-    public void openActivity6() {
-        Intent intent = new Intent(this, StartActivity.class);
-        startActivity(intent);
-    }
+
     public void openActivity() {
         Intent intent = new Intent(this, Loginin.class);
         startActivity(intent);
