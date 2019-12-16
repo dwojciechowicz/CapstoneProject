@@ -12,12 +12,15 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Signin extends AppCompatActivity {
     private Button register;
     private Button button;
     private EditText username, password, emailID, phoneNR;
     FirebaseAuth mfire;
+    private String uname, pwd, email, phone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,10 +36,10 @@ public class Signin extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uname = username.getText().toString().trim();
-                final String pwd = password.getText().toString().trim();
-                String phone = phoneNR.getText().toString().trim();
-                final String email = emailID.getText().toString().trim();
+                uname = username.getText().toString().trim();
+                pwd = password.getText().toString().trim();
+                phone = phoneNR.getText().toString().trim();
+                email = emailID.getText().toString().trim();
                 if(uname.isEmpty())
                 {
                     username.setError("Please enter your username");
@@ -67,7 +70,10 @@ public class Signin extends AppCompatActivity {
                                 Toast.makeText(Signin.this,"Signing up unsuccessful",Toast.LENGTH_SHORT).show();
                             }
                             else
-                           startActivity(new Intent(Signin.this, StartActivity.class));
+                            {
+                                sendUserData();
+                                startActivity(new Intent(Signin.this, StartActivity.class));
+                            }
                         }
                     });
                 }
@@ -86,5 +92,13 @@ public class Signin extends AppCompatActivity {
     public void openActivity() {
         Intent intent = new Intent(this, Loginin.class);
         startActivity(intent);
+    }
+
+    private void sendUserData()
+    {
+        FirebaseDatabase fdata = FirebaseDatabase.getInstance();
+        DatabaseReference myref = fdata.getReference(mfire.getUid());
+        UserProfile uprof = new UserProfile(uname,email,phone,50);
+        myref.setValue(uprof);
     }
 }
