@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class StartActivity extends AppCompatActivity {
-    private Button button2;
+    private Button button2, button4;
     private Button logout;
     private TextView name, balance;
     private FirebaseAuth mfire;
@@ -50,7 +50,7 @@ public class StartActivity extends AppCompatActivity {
             logout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    FirebaseAuth.getInstance().signOut();
+                    mfire.signOut();
                     startActivity(new Intent(StartActivity.this, Loginin.class));
                 }
             });
@@ -62,6 +62,13 @@ public class StartActivity extends AppCompatActivity {
                     startActivity(new Intent(StartActivity.this, HistoryActivity.class));
                 }
             });
+        button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StartActivity.this, TransferActivity.class));
+            }
+        });
     }
 
 }
