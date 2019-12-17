@@ -9,6 +9,7 @@
     <string name="transaction_history2">transaction_history2</string>
     <string name="your_transaction_history">Your Transaction History</string>
     <string name="current_balance">CURRENT BALANCE</string>
+    <string name="welcome">WELCOME</string>
     <string name="username">Full name</string>
     <string name="password">Password</string>
     <string name="login">Log in</string>

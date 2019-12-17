@@ -907,6 +907,9 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
+id textView6
+id textView8
 id time
 id title
 id titleDividerNoCustom
@@ -1051,6 +1054,7 @@ string telephone
 string transaction_history
 string transaction_history2
 string username
+string welcome
 string welcome_to_knupay
 string welcome_to_knupay1
 string your_transaction_history

@@ -3306,20 +3306,23 @@ public final class R {
     public static final int textView2=0x7f0700bd;
     public static final int textView3=0x7f0700be;
     public static final int textView4=0x7f0700bf;
-    public static final int time=0x7f0700c0;
-    public static final int title=0x7f0700c1;
-    public static final int titleDividerNoCustom=0x7f0700c2;
-    public static final int title_template=0x7f0700c3;
-    public static final int top=0x7f0700c4;
-    public static final int topPanel=0x7f0700c5;
-    public static final int unchecked=0x7f0700c6;
-    public static final int uniform=0x7f0700c7;
-    public static final int up=0x7f0700c8;
-    public static final int useLogo=0x7f0700c9;
-    public static final int wide=0x7f0700ca;
-    public static final int withText=0x7f0700cb;
-    public static final int wrap=0x7f0700cc;
-    public static final int wrap_content=0x7f0700cd;
+    public static final int textView5=0x7f0700c0;
+    public static final int textView6=0x7f0700c1;
+    public static final int textView8=0x7f0700c2;
+    public static final int time=0x7f0700c3;
+    public static final int title=0x7f0700c4;
+    public static final int titleDividerNoCustom=0x7f0700c5;
+    public static final int title_template=0x7f0700c6;
+    public static final int top=0x7f0700c7;
+    public static final int topPanel=0x7f0700c8;
+    public static final int unchecked=0x7f0700c9;
+    public static final int uniform=0x7f0700ca;
+    public static final int up=0x7f0700cb;
+    public static final int useLogo=0x7f0700cc;
+    public static final int wide=0x7f0700cd;
+    public static final int withText=0x7f0700ce;
+    public static final int wrap=0x7f0700cf;
+    public static final int wrap_content=0x7f0700d0;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
@@ -3460,9 +3463,10 @@ public final class R {
     public static final int transaction_history=0x7f0c0044;
     public static final int transaction_history2=0x7f0c0045;
     public static final int username=0x7f0c0046;
-    public static final int welcome_to_knupay=0x7f0c0047;
-    public static final int welcome_to_knupay1=0x7f0c0048;
-    public static final int your_transaction_history=0x7f0c0049;
+    public static final int welcome=0x7f0c0047;
+    public static final int welcome_to_knupay=0x7f0c0048;
+    public static final int welcome_to_knupay1=0x7f0c0049;
+    public static final int your_transaction_history=0x7f0c004a;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0d0000;
